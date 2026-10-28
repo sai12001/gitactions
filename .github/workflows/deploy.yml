@@ -75,7 +75,7 @@ jobs:
                 ("sudo docker pull " + $image),
                 "sudo docker rm -f simple-cicd-app || true",
                 ("sudo docker run -d --restart unless-stopped " +
-                 "--name simple-cicd-app -p 80:5000 " +
+                 "--name simple-cicd-app -p 80:8080 " +
                  "-e APP_VERSION=" + $version + " " + $image)
               ]
             }')
