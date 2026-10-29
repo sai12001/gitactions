@@ -7,7 +7,7 @@ def home():
     return jsonify({
         "message": "Hello from AWS EKS!",
         "deployment": "GitHub Actions",
-        "version": "v1"
+        "version": "v5"
     })
 
 @app.route("/health")
